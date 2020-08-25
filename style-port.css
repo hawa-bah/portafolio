@@ -1,0 +1,68 @@
+/*this is the CSS for my portafolio
+examples of rules below*/
+@import url("practice.css");
+.profile{ 
+        height: 250px;
+        border-radius: 250px;
+}
+@font-face {
+        font-family: Coves;
+        src: url(Coves-Light.otf);
+}
+body{
+        font-family: Coves;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        body{
+            background-color: rgb(185, 184, 184);
+            color: white;
+        }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+        body{
+                background-color: black;
+                color:white;
+        }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+        body{
+                color: black;
+        }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+        body {
+                background-color: rgb(211, 238, 235)
+        }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+        nav{
+                color: red
+        }
+        .row {
+                background-color: rgb(136, 184, 247);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 80px;
+        }
+}
+/*example of combinator below*/
+.ola ~ p {
+        background-color: yellow;
+}
+.ola > div{
+        background-color: white;
+        color: blue;
+        font-family: helvetica;
+        padding: 5px;
+        border:2px solid  rgb(136, 184, 247);
+}
+div {color: green}
+
+
